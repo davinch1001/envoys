@@ -1,7 +1,7 @@
 $orange: #F48020;
 
 .farms{
-  max-width: 962px;
+  width: 962px;
   background: white;
   padding: 0 15px;
   position: absolute;
@@ -226,14 +226,89 @@ $orange: #F48020;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.7s ease-in;
+        background: #F9F9F9;
+        display: flex;
         &.active{
-          display: block;
-          max-height: 200px;
+          display: flex;
+          max-height: 300px;
           transition: max-height 0.7s ease-in;
         }
         .links{
+          padding: 37px 0 42px 60px;
           display: flex;
           flex-direction: column;
+          .link{
+            text-decoration: none;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            /* light blue */
+            color: #2261DA;
+            .img{
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      &__farm-btns{
+        margin-left: 206px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .earned-counter{
+          margin-right: 68px;
+        }
+        .counter-name{
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          /* identical to box height */
+
+
+          /* light blue */
+
+          color: #2261DA;
+        }
+        .counter-count{
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          /* identical to box height */
+
+          text-align: right;
+
+          /* Main_Dark */
+
+          color: #133D65;
+        }
+        .farm-btn{
+          padding: 0 42px;
+          height: 42px;
+          border-style: none;
+          background: #2261DA;
+          opacity: 0.5;
+          border-radius: 14px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+
+          color: #FFFFFF;
+
+
+          /* Inside Auto Layout */
+
+          flex: none;
+          order: 0;
+          flex-grow: 0;
+          margin: 0px 10px;
+          &.active{
+            opacity: 1;
+          }
         }
       }
     }
