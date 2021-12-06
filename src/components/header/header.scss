@@ -1,0 +1,17 @@
+.header{
+  width: 100%;
+  height: 50px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .links{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    &:hover{
+      color: #F48020;
+      border-bottom: 1px solid #F48020;
+    }
+  }
+}
